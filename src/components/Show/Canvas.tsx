@@ -29,7 +29,7 @@ export default function Canvas({
   return (
     <div className="canvas" style={{ maxWidth: SIZES[device] }}>
       {blocks.length === 0 ? (
-        <p className="canvas-hint">Drag blocks here</p>
+        <p className="canvas-hint">Select blocks in the left container</p>
       ) : (
         <SortableContext
           items={blocks.map((b) => b.id)}
